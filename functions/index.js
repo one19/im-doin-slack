@@ -3,11 +3,12 @@ const exec = require('child_process').exec;
 const { updateStatus } = require('im-doin');
 
 // FIXME: rename our function to be im-doin themed
-exports.helloWorld = functions.https.onRequest((req, response) => {
+exports.helloWorld = functions.https.onRequest((req, res) => {
+  console.log('reqbody', req.body);
 
   // TODO: extract this into an optional filter
-  if (req.body.user_id !== 'U06TX7TQV') throw new Error('Only Drew is allowed to update the website, sorry!');
-  const message = req.body.text.split(' -b ');
+  const userIds = ['U06TX7TQV', 'U2R30LACE'];
+  if (!userIds.includes(req.body.user_id)) throw new Error('Only Drew is allowed to update the website, sorry!');
 
   // FIXME: shit. process.exi() on our module is shitting up the return.
   // remove process.exit in im-doin, and get this returning correctly
@@ -29,6 +30,5 @@ exports.helloWorld = functions.https.onRequest((req, response) => {
     console.log('hm, an error', err);
   }
 
-  // TODO: return a more valuable set of messages once process.exit is fixed
-  return 'Success!';
+  return res.send({ text: 'Success... (probably) check <https://one19.codes>'})
 });
