@@ -1,5 +1,8 @@
 # IM-DOIN-SLACK
 
+[![Maintenance status](https://raw.githubusercontent.com/one19/project-status/master/cache/im-doin-slack/maintained.svg?sanitize=true)](https://github.com/one19/project-status) [![Very unstable code](https://raw.githubusercontent.com/one19/project-status/master/cache/im-doin-slack/maintenance.svg?sanitize=true)](https://github.com/one19/project-status)
+
+---
 ### WHAT:
 This is a super experimental repo for using slack to send [im-doin](https://github.com/one19/im-doin) updates to your [im-doin-frontend](https://github.com/one19/im-doin-frontend).
 *DO NOT TRY TO USE THIS*
