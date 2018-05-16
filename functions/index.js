@@ -1,5 +1,4 @@
 const functions = require('firebase-functions');
-const exec = require('child_process').exec;
 const { updateStatus } = require('im-doin');
 
 // FIXME: rename our function to be im-doin themed
@@ -10,7 +9,7 @@ exports.helloWorld = functions.https.onRequest((req, res) => {
   const userIds = ['U06TX7TQV', 'U2R30LACE'];
   if (!userIds.includes(req.body.user_id)) throw new Error('Only Drew is allowed to update the website, sorry!');
 
-  var message = req.body.text.split(/\s-.{1}\s/ig);
+  const message = req.body.text.split(/\s-.{1}\s/ig);
   const messageParams = { message: message[0] };
 
   const backgroundParam = /\s-b{1}\s(\w*)/ig.exec(req.body.text);

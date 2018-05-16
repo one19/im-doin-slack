@@ -1,6 +1,7 @@
 # IM-DOIN-SLACK
 
-[![Maintenance status](https://raw.githubusercontent.com/one19/project-status/master/cache/im-doin-slack/maintained.svg?sanitize=true)](https://github.com/one19/project-status) [![Very unstable code](https://raw.githubusercontent.com/one19/project-status/master/cache/im-doin-slack/maintenance.svg?sanitize=true)](https://github.com/one19/project-status)
+[![Maintenance status](https://raw.githubusercontent.com/one19/project-status/master/cache/im-doin-slack/maintained.svg?sanitize=true)](https://github.com/one19/project-status) [![Very unstable code](https://raw.githubusercontent.com/one19/project-status/master/cache/im-doin-slack/maintenance.svg?sanitize=true)](https://github.com/one19/project-status) [![Known Vulnerabilities](https://snyk.io/test/github/one19/im-doin-slack/badge.svg?targetFile=functions%2Fpackage.json)](https://snyk.io/test/github/one19/im-doin-slack)
+
 
 ---
 ### WHAT:
