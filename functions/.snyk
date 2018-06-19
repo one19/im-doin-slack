@@ -24,4 +24,10 @@ ignore:
     - node-pre-gyp > request > stringstream:
         reason: None given
         expires: '2018-06-15T13:44:40.271Z'
-patch: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - firebase-functions > jsonwebtoken > joi > hoek:
+        patched: '2018-06-19T01:55:06.027Z'
+    - firebase-functions > jsonwebtoken > joi > topo > hoek:
+        patched: '2018-06-19T01:55:06.027Z'
